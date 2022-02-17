@@ -1,0 +1,79 @@
+
+
+
+<div class="logged-in-app-container">
+    
+    <div class="logged-in-side-nav">
+        <app-sidenav (selectedOption)="option=$event"></app-sidenav>
+    </div>
+    <div class="logged-in-main-content">
+        <div class="logged-in-routing">
+            <div class="logged-in-top-bar">
+                <app-top-bar [option]="option"></app-top-bar>
+            </div>
+            
+            <div class="dashboard-container"> 
+                <div class="dashboard-nav">
+                    <div class="tabs" *ngFor="let tab of tabs">
+                        <a routerLink="active">{{tab}}</a>
+                    </div>
+            
+                    <div class="info-card" style="border:1px solid #EE5656;" >
+                        Total Number of {{events[0]}} 
+                        <img src="../../assets/logo and icon/user.png" width="10%"><br>
+                        {{today[0]}}
+                    </div>
+                    <div class="info-card" style="border:1px solid #2FB4C2;">
+                        Total Number of {{events[1]}} 
+                        <img src="../../assets/logo and icon/user.png" width="10%"><br>
+                        {{today[1]}}
+                    </div>
+                    <div class="info-card" style="border:1px solid #82C846;">
+                        Total Number of {{events[2]}} 
+                        <img src="../../assets/logo and icon/user.png" width="10%"><br>
+                        {{today[2]}}
+                    </div>
+                    <div class="info-card" style="border:1px solid #A2CF68;">
+                        Total Number of {{events[3]}} 
+                        <img src="../../assets/logo and icon/user.png" width="10%"><br>
+                        {{today[3]}}
+                    </div>
+                    <div class="info-card" style="border:1px solid #CC9966;">
+                        Total Number of {{events[4]}} 
+                        <img src="../../assets/logo and icon/user.png" width="10%"><br>
+                        {{today[4]}}
+                    </div>
+                    <div class="info-card" style="border:1px solid #018A83;">
+                        Total Number of {{events[5]}} 
+                        <img src="../../assets/logo and icon/user.png" width="10%"><br>
+                        {{today[5]}}
+                    </div>
+                    
+            
+                    <table>
+                        <tr>
+                            <th *ngFor="let heading of header">
+                                {{heading}}
+                            </th>
+                        </tr>
+                        <tr *ngFor="let row of tableData;let i = index;">
+                            <ng-container *ngIf="i<=4">
+                                <td>{{row['sno']}}</td>
+                                <td>{{row['username']}}</td>
+                                <td>{{row['fullName']}}</td>
+                                <td>{{row['emailId']}}</td>
+                                <td>{{row['doj']}}</td>
+                                <td 
+                                    [style.color]="row['status'] == 'Active' ? 'green' : 'red'">
+                                    {{row['status']}}
+                                </td>
+                            </ng-container>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            

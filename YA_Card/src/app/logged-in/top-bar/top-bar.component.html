@@ -1,0 +1,12 @@
+<div class="top-bar-container">
+    <div class="name">{{displayName}}</div>
+
+    <div class="extra-feature" [ngSwitch]="displayName">
+        <div *ngSwitchCase="'Dashboard'">
+            <img src="../../assets/logo and icon/user.png" width="10%" routerLink="/Profile">
+        </div>
+        <div *ngSwitchCase="'Settings'">Nothing</div>
+        <div *ngSwitchCase="'Profile'">Nothing</div>
+        <div *ngSwitchDefault>Search bar</div>
+    </div>
+</div>

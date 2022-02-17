@@ -1,0 +1,79 @@
+@import "../top-bar/top-bar.component.css";
+@import "../logged-in.component.css";
+
+.dashboard-container
+{
+    display:inline-block;
+    margin-top:5%;
+    margin-left:8%;
+    width:84%;
+    background-color: #F8F8F8;
+}
+
+.dashboard-nav
+{
+    width:100%;
+    display: inherit;
+    height:10%;
+    margin-bottom:1%;
+}
+
+.tabs
+{
+    display: inherit;
+    width: auto;
+    margin-right:11%;
+    font-size:larger;
+    margin-bottom:2%;
+}
+
+a
+{
+    cursor:pointer;
+    color:#018A83;
+    text-decoration: none;
+}
+
+a:hover , .active
+{
+    border-bottom:2px solid #018A83;
+}
+
+.info-card
+{
+    display:inherit;
+    width:30%;
+    border-radius:5px;
+    margin-right:2%;
+    margin-bottom:2%;
+}
+
+.info-card img
+{
+    padding:10%;
+}
+
+table
+{
+    width:100%;
+}
+
+th
+{
+    margin:0;
+    background-color:#EEEEEE;
+    padding:2%;
+    text-align:left;
+    font-weight:500;
+}
+
+tr
+{
+    border-bottom:0.1px solid #F9F9F9;
+}
+
+td
+{
+    padding:1%;
+    background-color: #FFFFFF;
+}

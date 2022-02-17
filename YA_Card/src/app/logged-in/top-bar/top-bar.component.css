@@ -1,0 +1,31 @@
+@import "../logged-in.component.css";
+
+.top-bar-container
+{
+    padding-bottom:1%;
+    padding-top:3%;
+    padding-left:7%;
+    display: inline-block;
+    width:100%;
+    background-color: #EEEEEE;
+}
+
+.name
+{
+    font-size: 35px;
+    font-weight:bolder;
+    display:inherit;
+}
+
+.extra-feature
+{
+    float:right;
+    margin-right:10%;
+    display: inherit;
+}
+
+img
+{
+    margin-left:100%;
+    cursor:pointer;
+}

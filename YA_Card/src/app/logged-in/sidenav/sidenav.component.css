@@ -1,0 +1,49 @@
+@import "../logged-in.component.css";
+
+*
+{
+    margin:0;
+    padding:0;
+    background-color: #292526;
+    font-weight: bolder;
+}
+.side-nav-container
+{
+    background-color:#292526;
+    color:white;
+    margin-left:10%;
+    width:90%;
+}
+
+a
+{
+    padding:6%;
+    transition:3s;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    text-decoration:none;
+    color:inherit;
+    display: inherit;
+}
+
+a:hover , .active
+{
+    color:#018A83;
+    background-color: #F8F8F8;
+    transition:3s;
+    align-items:right;
+    cursor: pointer;
+}
+
+img
+{
+    margin:20%;
+    margin-top:10%;
+    margin-bottom:8%;
+}
+
+.gap
+{
+    height:9px;
+    background-color:#292526;
+}

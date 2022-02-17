@@ -1,0 +1,14 @@
+<div class="side-nav-container">
+
+    <img src="..\..\assets\logo and icon\Group 583.svg" width="40%">
+    
+    <ng-container *ngFor="let items of menu">
+        <a routerLink="/{{items}}" (click)="selectedOption.emit(items)" routerLinkActive="active">{{items}}</a>
+        <div class="gap"></div>
+    </ng-container>
+
+    <div style="margin-top:20%;">
+        <a>Logout</a>
+    </div>
+</div>
+
